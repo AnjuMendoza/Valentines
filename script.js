@@ -29,7 +29,8 @@ giftBox.addEventListener("click", () => {
 //Carousel
 
 const carouselContainer = document.querySelector(".carousel-container");
-const items = document.querySelectorAll(".carousel-item");
+const carousel = document.querySelector(".carousel");
+const items = Array.from(carousel.children);
 
 function updateFocus() {
     const containerCenter = carouselContainer.scrollTop + carouselContainer.offsetHeight / 2;
@@ -39,24 +40,16 @@ function updateFocus() {
         const itemHeight = item.offsetHeight;
         const itemCenter = itemTop + itemHeight / 2;
 
-        // If item is near center of container, add focus
         if (Math.abs(containerCenter - itemCenter) < itemHeight / 2) {
             item.classList.add("focus");
         } else {
             item.classList.remove("focus");
         }
     });
-
-    // Looping effect: if scrolled to bottom, jump back to start
-    if (carouselContainer.scrollTop + carouselContainer.offsetHeight >= carouselContainer.scrollHeight - 10) {
-        carouselContainer.scrollTop = 0;
-    }
 }
 
-// Update focus on scroll
+// Update focus when user scrolls manually
 carouselContainer.addEventListener("scroll", updateFocus);
 
-// Initialize focus on page load
-window.addEventListener("load", () => {
-    updateFocus();
-});
+// Initialize focus on load
+window.addEventListener("load", updateFocus);

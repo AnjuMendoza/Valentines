@@ -166,50 +166,55 @@ footer .footer-text {
     text-align: center;
 }
 
-/* Carousel container */
+/* Optional: footer alignment */
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: #9F84BD;
+}
+
+
 .carousel-container {
-    height: 70vh; /* vertical height of carousel */
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    height: 80vh;          /* take most of the screen height */
+    overflow-y: auto;       /* allow manual scrolling */
+    scrollbar-width: none;  /* hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* hide scrollbar in IE/Edge */
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    align-items: center;
+    position: relative;
 }
 
-/* Hide default scrollbar */
 .carousel-container::-webkit-scrollbar {
-    width: 8px;
-}
-.carousel-container::-webkit-scrollbar-thumb {
-    background-color: #C09BD8;
-    border-radius: 4px;
+    width: 0px; 
+    background: transparent;
 }
 
-/* Carousel items */
 .carousel {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;       /* space between photos */
     align-items: center;
+    position: relative;
 }
 
 .carousel-item {
+    flex: 0 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carousel-item img {
-    width: 250px;
-    max-width: 90vw;
+    width: 90vw;       /* fill most of width */
+    max-width: 400px;
+    height: 60vh;      /* large but not full screen */
+    object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(159, 132, 189, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Focus effect */
+/* Enlarge photo when centered */
 .carousel-item.focus img {
     transform: scale(1.1);
     box-shadow: 0 15px 40px rgba(159, 132, 189, 0.6);
 }
-
-
-
