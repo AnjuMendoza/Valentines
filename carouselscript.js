@@ -23,3 +23,4 @@ carouselContainer.addEventListener("scroll", updateFocus);
 
 // Initialize focus on load
 window.addEventListener("load", updateFocus);
+

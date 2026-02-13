@@ -7,14 +7,6 @@ body {
     color: #333;
     margin: 0;
 }
-main {
-    flex: 1 0 auto; /* grow as needed but don't push footer */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
 
 /* Header */
 header {
@@ -79,16 +71,12 @@ header h2 {
 
 /* Footer */
 footer {
-    padding: 1.5rem 1rem;
+    padding: 3rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #9F84BD;
     color: white;
-}
-
-footer .footer-text {
-    font-size: 1rem;
 }
 
 
