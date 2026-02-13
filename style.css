@@ -130,20 +130,20 @@ footer .footer-text {
     padding: 2rem;
 }
 
-/* Gift box styling */
 .gift-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 150px;
-    background-color: #EBC3DB; /* box background */
-    border: 5px solid #C09BD8; /* ribbon effect */
+    background-color: #EBC3DB;
+    border: 5px solid #C09BD8;
     border-radius: 20px;
     text-decoration: none;
     color: #333;
-    transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(159, 132, 189, 0.4);
+    transition: transform 0.15s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .gift-box:hover {
