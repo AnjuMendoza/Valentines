@@ -159,11 +159,57 @@ footer .footer-text {
 
 /* Label below the box */
 .gift-label {
-    margin-top: 1rem;
+    margin-top: 2.3rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     text-align: center;
 }
+
+/* Carousel container */
+.carousel-container {
+    height: 70vh; /* vertical height of carousel */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* Hide default scrollbar */
+.carousel-container::-webkit-scrollbar {
+    width: 8px;
+}
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: #C09BD8;
+    border-radius: 4px;
+}
+
+/* Carousel items */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.carousel-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img {
+    width: 250px;
+    max-width: 90vw;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(159, 132, 189, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.carousel-item.focus img {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(159, 132, 189, 0.6);
+}
+
 
 
