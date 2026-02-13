@@ -101,3 +101,69 @@ footer {
 footer .footer-text {
     font-size: 1rem;
 }
+
+/* Gift box container */
+.gift-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Gift box container */
+.gift-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Gift box container */
+.gift-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Gift box styling */
+.gift-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #EBC3DB; /* box background */
+    border: 5px solid #C09BD8; /* ribbon effect */
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(159, 132, 189, 0.4);
+}
+
+.gift-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(159, 132, 189, 0.6);
+    background-color: #C09BD8;
+    color: white;
+}
+
+.gift-emoji {
+    font-size: 3rem; /* big present emoji */
+}
+
+/* Label below the box */
+.gift-label {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
