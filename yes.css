@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #FF0000; /* loud red */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #0000FF; /* loud blue */
+}
+
+header h1 {
+    font-size: 5rem;
+    text-shadow: 5px 5px yellow;
+    margin: 2rem 1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fun-text {
+    font-size: 2rem;
+    background-color: yellow;
+    padding: 1rem 2rem;
+    border: 5px dashed blue;
+    transform: rotate(-5deg);
+}
+
+/* simple “confetti” */
+.confetti {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.confetti-piece {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(20deg);
+}
+
+.confetti-piece.blue {
+    background-color: blue;
+}
+
+footer {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #FFFF00; /* bright yellow */
+    color: #FF00FF; /* wild pink */
+    font-weight: bold;
+}
